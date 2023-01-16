@@ -1,0 +1,144 @@
+/* :root {
+    --link-color: #CC9933;
+    --bg-color: #FFFFFF;
+    --text-color: #000000;
+}
+ */
+/* @font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff');
+}
+ */
+@font-face {
+    font-family: 'Montserrat';
+    src: local(''),
+        url('montserrat-regular-webfont.woff2') format('woff2'),
+        url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+/* HEADER */
+.header {
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 0px 0px 32px 32px;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+    gap: 85px;
+}
+
+.nav {
+    margin-right: 260px;
+}
+
+.nav__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.search-icon {
+    background: url(/img/header/search-icon.svg) center no-repeat transparent;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    max-width: 1770px;
+    height: 620px;
+    background: url(/img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 32px;
+    padding: 100px 80px;
+}
+
+.hero-wrap {
+    max-width: 837px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.hero__title {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    margin-bottom: 24px;
+}
+
+.hero__subtext {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 90px;
+}
+.btn {
+    background-color: #FF9900;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    /* border: none; */
+    padding: 20px 38px;
+}
+.hero__btn {
+    padding: 25px 39px;
+    font-size: 23px;
+line-height: 28px;
+}
