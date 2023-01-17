@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=s, initial-scale=1.0">
     <title>Евклид</title>
-    <link rel="stylesheet" href="/styles/normalize.css">
+    <!-- <link rel="stylesheet" href="/styles/normalize.css"> -->
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
@@ -22,16 +22,16 @@
                         <a class="nav__link link-hover" href="">О нас</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link link-hover" href="">Услуги</a>
+                        <a class="nav__link link-hover" href="">Проекты</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link link-hover" href="">Преимущества</a>
+                        <a class="nav__link link-hover" href="">Этапы</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link link-hover" href="">Размещение</a>
+                        <a class="nav__link link-hover" href="">Отзывы</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link link-hover" href="">Блог</a>
+                        <a class="nav__link link-hover" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -58,10 +58,10 @@
         </section>
         <section class="section__about-us">
             <div class="container about-us">
-                <h2 class="section__heading">
+                <h2 class="section__heading about-us__heading">
                     О нас
                 </h2>
-                <p class="text">
+                <p class="text about-us__text">
                     Также как перспективное планирование создаёт необходимость включения в производственный план целого
                     ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности
                     и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены
@@ -74,7 +74,7 @@
                 <div class="about-us-card">
                     <div class="about-us-card_left">
                         <div class="about-us-card__description">
-                            <p class="about-us-card__text">
+                            <p class="text about-us-card__text">
                                 Принимая во внимание показатели успешности, перспективное планирование способствует
                                 подготовке и реализации новых принципов
                             </p>
@@ -83,30 +83,27 @@
                             </button>
                         </div>
                     </div>
-                    <div class="about-us-card_right right-card">
-                        <div class="right-card_upper">
+                    <div class="about-us-card_right">
+                        <div class="right-card right-card_upper">
                             <div class="right-card__img right-card__img_upper"></div>
                             <div class="right-card__description">
-                                <h3 class="right-card__heading">
+                                <h3 class="title">
                                     Консультация с широким активом
                                 </h3>
-                                <p class="text">
+                                <p class="right-card__text">
                                     А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты
                                     для как самодостаточных, так и внешне зависимых концептуальных решений
                                 </p>
                             </div>
                         </div>
-                        <div class="right-card_lower">
+                        <div class="right-card right-card_lower">
                             <div class="right-card__img right-card__img_lower"></div>
                             <div class="right-card__description">
-                                <h3 class="right-card__heading title">
+                                <h3 class="title">
                                     В своём стремлении повысить
                                 </h3>
-                                <p class="right-card__text text">
-                                    А также свежий взгляд на привычные вещи — безусловно открывает новые горизКачество
-                                    жизни, они забывают, что сплочённость команды профессионалов представляет собой
-                                    интересный эксперимент проверки прогресса профессионального сообществаонты
-                                    для как самодостаточных, так и внешне зависимых концептуальных решений
+                                <p class="right-card__text">
+                                    Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества
                                 </p>
                             </div>
                         </div>
@@ -117,10 +114,10 @@
 
         <section class="section__how-we-work">
             <div class="container">
-                <h2 class="section__heading">
+                <h2 class="section__heading how-we-work__heading">
                     Как мы работаем
                 </h2>
-                <ol class="steps__list">
+                <ol class="steps__list how-we-work__list">
                     <li class="steps__item">
                         1 шаг
                     </li>
@@ -139,7 +136,7 @@
                         <h3 class="title">
                             Проводим консультацию
                         </h3>
-                        <p class="text">
+                        <p class="working-box__text">
                             Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках
                             спецификации современных стандартов, некоторые особенности внутренней политики будут
                             объективно
@@ -160,14 +157,14 @@
                         </button>
                     </div>
                     <div class="working-box__image">
-                        <img src="" alt="">
+                        <img src="/img/how-we-work/Rectangle 18.jpg" alt="консультирование">
                     </div>
                 </div>
             </div>
         </section>
         <section class="section__FAQ">
             <div class="container">
-                <h2 class="section__heading">
+                <h2 class="section__heading FAQ__heading">
                     Часто задаваемые вопросы
                 </h2>
                 <ul class="FAQ-list">
@@ -175,26 +172,31 @@
                         <h3 class="title">
                             Из чего формируется конечная стоимость проекта?
                         </h3>
+                        <div class="accordeon-icon"></div>
                     </li>
                     <li class="FAQ-list__item">
                         <h3 class="title">
                             У меня есть свой проект. Сможем ли мы его доработать / реализовать?
                         </h3>
+                        <div class="accordeon-icon"></div>
                     </li>
                     <li class="FAQ-list__item">
                         <h3 class="title">
                             Я выбираю между разными компаниями. В чём ваше отличие?
                         </h3>
+                        <div class="accordeon-icon"></div>
                     </li>
                     <li class="FAQ-list__item">
                         <h3 class="title">
                             Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
                         </h3>
+                        <div class="accordeon-icon"></div>
                     </li>
                     <li class="FAQ-list__item">
                         <h3 class="title">
                             Могу ли я вернуть деньги на каком-либо из этапов работ?
                         </h3>
+                        <div class="accordeon-icon"></div>
                     </li>
                 </ul>
             </div>
@@ -204,57 +206,57 @@
         <div class="container footer__container">
             <nav class="footer-nav">
                 <a class="logo footer__logo" href="pet2/index.html">
-                    <img src="/img/logo.svg" alt="evklid logo">
+                    <img class="" src="/img/footer/footer-logo.svg" alt="evklid logo">
                 </a>
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-link" href="">
-                            О нас
-                        </a>
-                    </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-link" href="">
-                            Проекты
-                        </a>
-                    </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-link" href="">
-                            Отзывы
-                        </a>
-                    </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-link" href="">
-                            Договор оферты
-                        </a>
-                    </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-link" href="">
-                            Договор подряда
-                        </a>
-                    </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-link" href="">
-                            Конфиденциальность
-                        </a>
-                    </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-link" href="">
-                            Партнерское соглашение
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-link" href="">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-link" href="">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-link" href="">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-link" href="">
+                                Договор оферты
+                            </a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-link" href="">
+                                Договор подряда
+                            </a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-link" href="">
+                                Конфиденциальность
+                            </a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-link" href="">
+                                Партнерское соглашение
+                            </a>
+                        </li>
+                    </ul>
                 <div class="social-media">
-                    <div class="ok-icon"></div>
-                    <div class="vk-icon"></div>
+                    <div class="social-media__icon ok-icon"></div>
+                    <div class="social-media__icon vk-icon"></div>
                 </div>
             </nav>
 
-                <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <form class="footer-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
                     <label class="label">Оставить заявку</label>
                     <input class="input" type="text" name="name" placeholder="Фамилия, имя и отчество*">
                     <input class="input" type="mail" name="mail" placeholder="Email*">
-                    <input class="imput input-massage" type="text" name="massage" placeholder="Сообщение">
-                    <button type="submit" class="btn form__btn">Отправить данные</button>
+                    <textarea class="input input-massage" name="massage" placeholder="Сообщение"></textarea>
+                    <button type="submit" class="btn footer-form__btn">Отправить данные</button>
                 </form>
             <p class="footer-text">
                 Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация 
