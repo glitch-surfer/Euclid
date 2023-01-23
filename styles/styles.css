@@ -134,7 +134,7 @@ body {
 
 .container {
     max-width: 1920px;
-    /* width: 100%; */
+    width: 100%;
     margin: 0 auto;
     padding-left: 75px;
     padding-right: 75px;
@@ -149,9 +149,14 @@ body {
 .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
     border-radius: 0px 0px 32px 32px;
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.burger {
+    display: none;
 }
 
 .header__logo {
@@ -159,14 +164,14 @@ body {
     transform: translateY(5px);
 }
 
+.header__nav {
+    margin-right: 253px;
+}
+
 .nav__list {
     display: flex;
     align-items: center;
-    gap: 68px;
-}
-
-.nav {
-    margin-right: 250px;
+    gap: 67px;
 }
 
 .nav__link {
@@ -207,8 +212,6 @@ body {
 }
 
 .hero {
-    width: 100%;
-    max-width: 1770px;
     min-height: 620px;
     background: url(/img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg) center no-repeat;
     background-size: cover;
@@ -299,9 +302,10 @@ body {
 }
 
 .about-us-card__text {
-    max-width: 433px;
+    max-width: 448px;
     color: #FFFFFF;
     font-weight: 700;
+    padding-right: 15px;
 }
 
 .about-us-card__btn {
@@ -329,12 +333,12 @@ body {
 
 .right-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 65px 120px 63px 60px;
+    padding: 65px 48px 63px 60px;
     border: 1px solid #CACACA;
+    gap: 50px;
     border-radius: 32px;
-    max-width: 870px;
 }
 
 .right-card__img {
@@ -417,14 +421,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
+}
+
+.working-box__content {
+    flex: 0 1 758px;
 }
 
 .working-box__title {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    line-height: 32px;
 }
 
 .working-box__text {
-    max-width: 758px;
     margin-bottom: 18px;
 }
 
@@ -458,11 +467,11 @@ body {
 /* FAQ */
 
 .section__FAQ {
-    padding-bottom: 100px;
+    padding-bottom: 99px;
 }
 
 .FAQ__heading {
-    margin-bottom: 32px;
+    margin-bottom: 34px;
 }
 
 .FAQ-list__item {
@@ -475,6 +484,10 @@ body {
     margin-top: -1px;
     position: relative;
     transition: border-color 0.3s ease-in-out;
+}
+
+.FAQ-list__title {
+    line-height: 32px;
 }
 
 .FAQ-list__item:hover,
@@ -571,8 +584,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    min-width: 670px;
-    padding-left: 100px;
+    min-width: 570px;
+    min-width: 698px;
+    padding-left: 130px;
 }
 
 .label {
@@ -616,4 +630,180 @@ body {
     width: 363px;
     color: #CACACA;
     align-self: center;
+    margin-left: 30px;
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    /* HEADER */
+    .header__nav {
+        margin-right: auto;
+    }
+
+    .nav__list {
+        gap: 40px;
+    }
+
+    .header__container {
+        justify-content: space-between;
+    }
+
+    /* HERO */
+    .hero__title {
+        font-size: 60px;
+        line-height: 73px;
+        margin-bottom: 16px;
+    }
+
+    .hero__subtext {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    .hero {
+        background-image: url(/img/hero/low-angle-photo-of-balconies-2462015\ 1024.jpg);
+    }
+
+    /* ABOUT US */
+
+    .about-us-card {
+        flex-direction: column;
+    }
+
+    .about-us-card_left {
+        flex: 0 1 640px;
+        max-width: 1100px;
+    }
+
+    .right-card {
+        padding: 65px 48px 63px 77px;
+        max-width: 1100px;
+    }
+
+    /* HOW WE WORK */
+    .working-box__content {
+        flex: 0 1 500px;
+    }
+
+    .working-box__text {
+        margin-bottom: 18px;
+    }
+
+    /* FOOTER */
+    .footer-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* HEADER */
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header__logo {
+        margin-right: 0px;
+        width: 150px;
+        height: 48px;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 160px 77px;
+    }
+
+    .hero-wrap {
+        max-width: 770px;
+    }
+
+    .section__hero {
+        padding-bottom: 35px;
+    }
+
+    /* ABOUT US */
+    .section__about-us {
+        padding-bottom: 80px;
+    }
+
+    .about-us__text {
+        margin-bottom: 60px;
+    }
+
+    /* HOW WE WORK */
+
+    .section__how-we-work {
+        padding-bottom: 80px;
+    }
+
+    .how-we-work__list {
+        margin-bottom: 46px;
+    }
+
+
+    .working-box__text {
+        /*     max-width: 500px; */
+        margin-bottom: 25px;
+    }
+
+    .working-box__content {
+        flex: 0 1 437px;
+    }
+
+    /* FAQ */
+
+    .section__FAQ {
+        padding-bottom: 80px;
+    }
+
+    .FAQ__heading {
+        margin-bottom: 33px;
+    }
+
+    .FAQ-list__title {
+        font-size: 20px;
+        max-width: 756px;
+        line-height: 32px;
+    }
+
+    /* FOOTER */
+
+
+    .footer__container {
+        padding: 50px;
+    }
+
+
+    .footer-form {
+        min-width: 641px;
+        padding-left: 100px;
+    }
+
+    .label {
+        font-size: 48px;
+        line-height: 59px;
+        color: #CACACA;
+    }
+
+    .footer-form__btn {
+        padding: 19px 38px;
+    }
+
+
+
+
 }
