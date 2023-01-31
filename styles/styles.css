@@ -2,8 +2,10 @@
     --main-color: #FF9900;
     --main-color_light: #FFB84D;
     --color-actve: #E1670E;
+    --swiper-theme-color: #fff;
 }
 
+/* FONTS */
 
 @font-face {
     font-family: 'Montserrat';
@@ -50,6 +52,8 @@
     font-style: normal;
 }
 
+/* COMMON */
+
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -90,12 +94,11 @@ ol {
 img,
 svg {
     max-width: 100%;
-    height: auto;
 }
 
-address {
+/* address {
     font-style: normal;
-}
+} */
 
 input,
 textarea,
@@ -135,13 +138,14 @@ body {
 
 .container {
     max-width: 1920px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     padding-left: 75px;
     padding-right: 75px;
 }
 
-/* HEADER */
+/* -------------- HEADER --------------  */
+
 .header {
     height: 100px;
     margin-bottom: 50px;
@@ -156,7 +160,40 @@ body {
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
 
-.burger {
+.burger-menu {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 420px;
+    background-color: white;
+    padding: 38px 106px 70px 50px;
+    border-radius: 0px 0px 32px 32px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-101%);
+}
+
+.burger-menu.is-active {
+    transform: none;
+}
+
+.close-menu-icon {
+    margin-bottom: 107px;
+}
+
+.burger-menu__link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 60px;
+}
+
+
+
+.burger-icon {
     display: none;
 }
 
@@ -207,19 +244,20 @@ body {
 }
 
 
-/* HERO */
+/* -------------- HERO ---------------*/
+
 .section__hero {
     padding-bottom: 50px;
 }
 
 .hero {
-    background: url(/img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg) center no-repeat;
-    background-size: cover;
-    border-radius: 32px;
+    position: relative;
     padding: 100px 80px;
 }
 
 .hero-wrap {
+    position: relative;
+    z-index: 2;
     max-width: 837px;
     color: #FFFFFF;
     font-weight: 700;
@@ -239,13 +277,13 @@ body {
 }
 
 .btn {
+    font-size: 16px;
     background-color: var(--main-color, #FF9900);
     border-radius: 16px;
     color: #FFFFFF;
     font-weight: 700;
     padding: 20px 38px;
     transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
-    font-size: 16px;
 }
 
 .btn:hover,
@@ -263,7 +301,38 @@ body {
     line-height: 28px;
 }
 
-/* ABOUT US */
+.swiper {
+    position: absolute;
+    min-height: inherit;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 32px;
+}
+
+.swiper-slide__img1 {
+    background: url(/img/hero/hero-pic-1920-1.jpg) center no-repeat;
+    background-size: cover;
+}
+.swiper-slide__img2 {
+    background: url(/img/hero/hero-pic-1920-2.jpg) center no-repeat;
+    background-size: cover;
+}
+.swiper-slide__img3 {
+    background: url(/img/hero/hero-pic-1920-3.jpg) center no-repeat;
+    background-size: cover;
+}
+.swiper-pagination-bullet {
+    background: #fff;
+    width: 15px;
+    height: 15px;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 10px;
+}
+
+/*  --------------- ABOUT US --------------- */
 .section__about-us {
     padding-bottom: 100px;
 }
@@ -386,7 +455,7 @@ body {
     background-color: var(--color-actve, #E1670E);
 }
 
-/* HOW WE WORK */
+/*  --------------- HOW WE WORK --------------- */
 
 .section__how-we-work {
     padding-bottom: 110px;
@@ -407,17 +476,17 @@ body {
     transform: translateX(-6px);
 }
 
-.steps__link {
+.steps__btn {
     padding: 0 7px;
     color: #000;
     transition: color 0.3s ease-in-out;
 }
 
-.steps__link:hover {
+.steps__btn:hover {
     color: var(--main-color, #FF9900);
 }
 
-.steps__link:active {
+.steps__btn:active {
     color: var(--color-actve, #E1670E);
     outline: none;
 }
@@ -425,12 +494,22 @@ body {
 .working-box {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 50px;
 }
 
+.tab-content {
+    display: none;
+}
+
+.tab-content_active {
+    display: block;
+}
+
 .working-box__content {
+    display: flex;
+    flex-direction: column;
     flex: 0 1 758px;
+    justify-content: space-between;
 }
 
 .working-box__title {
@@ -469,7 +548,7 @@ body {
     top: 9px;
 }
 
-/* FAQ */
+/*  --------------- FAQ --------------- */
 
 .section__FAQ {
     padding-bottom: 99px;
@@ -480,19 +559,40 @@ body {
 }
 
 .FAQ-list__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
+
     border-bottom: 1px solid #CACACA;
     border-top: 1px solid #CACACA;
     margin-top: -1px;
     position: relative;
     transition: border-color 0.3s ease-in-out;
+
+}
+
+.FAQ-list__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    cursor: pointer;
 }
 
 .FAQ-list__title {
     line-height: 32px;
+}
+
+.FAQ-list__accordion {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.FAQ-list__accordion-is-active {
+    max-height: none;
+    margin-bottom: 40px;
+}
+
+.FAQ-list__accordion-is-active .accordeon-icon {
+    transform: translateX(100px);
 }
 
 .FAQ-list__item:hover,
@@ -516,7 +616,7 @@ body {
     fill: #FFFFFF;
 }
 
-/* FOOTER */
+/*  --------------- FOOTER  --------------- */
 
 .footer {
     height: 594px;
@@ -590,8 +690,6 @@ body {
     flex-direction: column;
     gap: 25px;
     padding-left: 135px;
-    /*     position: relative;
-    left: 50px; */
 }
 
 .label {
@@ -624,6 +722,7 @@ body {
 .input-massage {
     height: 150px;
     padding-top: 20px;
+    resize: none;
 }
 
 .footer-form__btn {
@@ -639,6 +738,8 @@ body {
     margin-left: 35px;
 
 }
+
+/*  --------------- MEDIA 1400  --------------- */
 
 @media screen and (max-width: 1400px) {
 
@@ -668,8 +769,17 @@ body {
         margin-bottom: 60px;
     }
 
-    .hero {
-        background-image: url(/img/hero/low-angle-photo-of-balconies-2462015\ 1024.jpg);
+    .swiper-slide__img1 {
+        background: url(/img/hero/hero-pic-1024-1.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .swiper-slide__img2 {
+        background: url(/img/hero/hero-pic-1024-2.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .swiper-slide__img3 {
+        background: url(/img/hero/hero-pic-1024-3.jpg) center no-repeat;
+        background-size: cover;
     }
 
     /* ABOUT US */
@@ -718,6 +828,8 @@ body {
     }
 }
 
+/*  --------------- MEDIA 1024  --------------- */
+
 @media screen and (max-width: 1024px) {
     .container {
         padding-left: 50px;
@@ -725,7 +837,7 @@ body {
     }
 
     /* HEADER */
-    .burger {
+    .burger-icon {
         display: block;
     }
 
@@ -781,7 +893,6 @@ body {
     }
 
     .working-box__text {
-        /*     max-width: 500px; */
         margin-bottom: 25px;
     }
 
@@ -825,6 +936,8 @@ body {
     }
 }
 
+/*  --------------- MEDIA 868  --------------- */
+
 @media screen and (max-width: 868px) {
 
     /* ABOUT US */
@@ -865,17 +978,13 @@ body {
         margin-bottom: 9px;
     }
 
-    /* correct it */
     .footer-form {
         padding-left: 0px;
         max-width: 541px;
     }
-
-    .input {
-        max-width: 541px;
-    }
-
 }
+
+/*  --------------- MEDIA 768  --------------- */
 
 @media screen and (max-width: 768px) {
 
@@ -889,10 +998,14 @@ body {
         border-radius: 0px 0px 24px 24px;
     }
 
+    .burger-menu {
+        padding: 22px 106px 70px 50px;
+        border-radius: 0px 0px 24px 24px;
+    }
+
     /* HERO */
 
     .hero {
-        border-radius: 24px;
         padding: 20.833333333333332vw 5.208333333333333vw;
     }
 
@@ -910,6 +1023,22 @@ body {
         line-height: 22px;
         margin-bottom: 60px;
     }
+    .swiper {
+        border-radius: 24px;
+    }
+    
+    .swiper-slide__img1 {
+        background: url(/img/hero/hero-pic-768-1.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .swiper-slide__img2 {
+        background: url(/img/hero/hero-pic-768-2.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .swiper-slide__img3 {
+        background: url(/img/hero/hero-pic-768-3.jpg) center no-repeat;
+        background-size: cover;
+    }
 
     /* ABOUT US */
 
@@ -924,7 +1053,6 @@ body {
 
     .about-us-card__text {
         max-width: 375px;
-        /* font-size: 2.085vw; */
     }
 
     .about-us-card_left {
@@ -941,8 +1069,6 @@ body {
     .right-card {
         border-radius: 24px;
         gap: 16px;
-        /*         font-size: 2.085vw;
-        line-height: 4.166666666666667vw; */
         padding: 4.557291666666667vw 6.25vw 4.296875vw 5.208333333333333vw;
     }
 
@@ -964,7 +1090,7 @@ body {
         transform: translateX(0px);
     }
 
-    .steps__link {
+    .steps__btn {
         padding: 0px;
     }
 
@@ -1005,6 +1131,8 @@ body {
     }
 }
 
+/*  --------------- MEDIA 500  --------------- */
+
 @media screen and (max-width: 500px) {
     .container {
         padding-left: 15px;
@@ -1023,9 +1151,7 @@ body {
 
     /* HERO */
     .hero {
-        border-radius: 16px;
         padding: 60px 21px 60px 23px;
-        background-image: url(/img/hero/hero-320.jpg);
     }
 
     .hero-wrap {
@@ -1050,6 +1176,24 @@ body {
         font-size: 12px;
         line-height: 15px;
     }
+
+    .swiper {
+        border-radius: 16px;
+    }
+    
+    .swiper-slide__img1 {
+        background: url(/img/hero/hero-pic-320-1.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .swiper-slide__img2 {
+        background: url(/img/hero/hero-pic-320-2.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .swiper-slide__img3 {
+        background: url(/img/hero/hero-pic-320-3.jpg) center no-repeat;
+        background-size: cover;
+    }
+    
 
     /* ABOUT US */
 
@@ -1212,6 +1356,8 @@ body {
     }
 }
 
+/*  --------------- MEDIA 320  --------------- */
+
 @media screen and (max-width: 320px) {
 
     .header__logo {
@@ -1219,11 +1365,35 @@ body {
         height: 35px;
     }
 
+    .burger-menu {
+        width: 320px;
+        padding: 22px 106px 70px 15px;
+        border-radius: 0px 0px 16px 16px;
+    }
+
+    .close-menu-icon {
+        margin-bottom: 32px;
+    }
+
+    .burger-menu__link {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 32px;
+    }
+
     /* HERO */
     .section__hero {
         padding-bottom: 59px;
     }
-
+    
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: -5px;
+    }
+    
     /* ABOUT US */
 
     .section__about-us {
