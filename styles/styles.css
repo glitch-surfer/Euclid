@@ -236,7 +236,7 @@ body {
 }
 
 .search-icon {
-    background: url(../img/header/search-icon.svg) center no-repeat transparent;
+    background: url(/img/header/search-icon.svg) center no-repeat transparent;
     background-size: contain;
     width: 24px;
     height: 24px;
@@ -311,15 +311,15 @@ body {
 }
 
 .swiper-slide__img1 {
-    background: url(../img/hero/hero-pic-1920-1.jpg) center no-repeat;
+    background: url(/img/hero/hero-pic-1920-1.jpg) center no-repeat;
     background-size: cover;
 }
 .swiper-slide__img2 {
-    background: url(../img/hero/hero-pic-1920-2.jpg) center no-repeat;
+    background: url(/img/hero/hero-pic-1920-2.jpg) center no-repeat;
     background-size: cover;
 }
 .swiper-slide__img3 {
-    background: url(../img/hero/hero-pic-1920-3.jpg) center no-repeat;
+    background: url(/img/hero/hero-pic-1920-3.jpg) center no-repeat;
     background-size: cover;
 }
 .swiper-pagination-bullet {
@@ -358,7 +358,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: url(../img/about-us/Rectangle\ 2.jpg) no-repeat center;
+    background: url(/img/about-us/Rectangle\ 2.jpg) no-repeat center;
     background-size: cover;
     max-width: 868px;
     border-radius: 32px;
@@ -422,11 +422,11 @@ body {
 }
 
 .right-card__img_upper {
-    background-image: url(../img/about-us/about-us-icon-1.svg);
+    background-image: url(/img/about-us/about-us-icon-1.svg);
 }
 
 .right-card__img_lower {
-    background-image: url(../img/about-us/about-us-icon-2.svg);
+    background-image: url(/img/about-us/about-us-icon-2.svg);
 }
 
 .right-card__description {
@@ -758,7 +758,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../img/check.svg) center no-repeat transparent;
+    background: url(/img/check.svg) center no-repeat transparent;
     background-size: contain;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -806,15 +806,15 @@ body {
     }
 
     .swiper-slide__img1 {
-        background: url(../img/hero/hero-pic-1024-1.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-1024-1.jpg) center no-repeat;
         background-size: cover;
     }
     .swiper-slide__img2 {
-        background: url(../img/hero/hero-pic-1024-2.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-1024-2.jpg) center no-repeat;
         background-size: cover;
     }
     .swiper-slide__img3 {
-        background: url(../img/hero/hero-pic-1024-3.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-1024-3.jpg) center no-repeat;
         background-size: cover;
     }
 
@@ -1067,15 +1067,15 @@ body {
     }
     
     .swiper-slide__img1 {
-        background: url(../img/hero/hero-pic-768-1.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-768-1.jpg) center no-repeat;
         background-size: cover;
     }
     .swiper-slide__img2 {
-        background: url(../img/hero/hero-pic-768-2.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-768-2.jpg) center no-repeat;
         background-size: cover;
     }
     .swiper-slide__img3 {
-        background: url(../img/hero/hero-pic-768-3.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-768-3.jpg) center no-repeat;
         background-size: cover;
     }
 
@@ -1221,15 +1221,15 @@ body {
     }
     
     .swiper-slide__img1 {
-        background: url(../img/hero/hero-pic-320-1.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-320-1.jpg) center no-repeat;
         background-size: cover;
     }
     .swiper-slide__img2 {
-        background: url(../img/hero/hero-pic-320-2.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-320-2.jpg) center no-repeat;
         background-size: cover;
     }
     .swiper-slide__img3 {
-        background: url(../img/hero/hero-pic-320-3.jpg) center no-repeat;
+        background: url(/img/hero/hero-pic-320-3.jpg) center no-repeat;
         background-size: cover;
     }
     
@@ -1315,11 +1315,11 @@ body {
     }
 
     .right-card__img_upper {
-        background-image: url(../img/about-us/about-us-icon-1-320.svg);
+        background-image: url(/img/about-us/about-us-icon-1-320.svg);
     }
 
     .right-card__img_lower {
-        background-image: url(../img/about-us/about-us-icon-2-320.svg);
+        background-image: url(/img/about-us/about-us-icon-2-320.svg);
     }
 
     /* HOW WE WORK */
