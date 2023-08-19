@@ -1,2 +1,5 @@
-# pet2
-## Адаптивный сайт на чистом HTML + CSS + пара JS-плагинов, пара кастомизаций.
+# Euclid
+
+Single page website in pure HTML, CSS and JS. Responsiveness from 320 to 1920 pixels, pixel perfect layout
+
+(deploy)[https://glitch-surfer.github.io/Euclid/]
